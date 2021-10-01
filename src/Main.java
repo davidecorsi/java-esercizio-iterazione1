@@ -6,5 +6,12 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
+		int somma = 0;
+		while(somma < 1000) {
+			System.out.print("Inserisci il numero(totale=" + somma + ") ");
+			int n = input.nextInt();
+			somma += n;
+		}
+		System.out.println("La somma dei numeri è " + somma);
 	}
 }
